@@ -1,5 +1,5 @@
 # COLING 2025 Tutorial
-# LLMs in Education: Novel Perspectives, Challenges, and Opportunities
+# Safety Issues in Generative AI
 
 The code is adapted from the [Nerfies website](https://nerfies.github.io).
 
