@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="LLMs in Education: Novel Perspectives, Challenges, and Opportunities">
+  <meta name="description" content="Safety Issues for Generative AI">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>COLING 2025 Tutorial: LLMs in Education: Novel Perspectives, Challenges, and Opportunities</title>
+  <title>COLING 2025 Tutorial: Safety Issues for Generative AI</title>
 
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
@@ -14,8 +14,7 @@
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -24,268 +23,310 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">
               <span style="font-size: 80%">COLING 2025 Tutorial</span><br />
-              <!-- <span>COLING 2025 Tutorial</span><br/> -->
-              LLMs in Education: Novel Perspectives, Challenges, and Opportunities
+              Safety Issues for Generative AI
             </h1>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <div style="display: flex; justify-content: space-between; padding: 5px">
-                <!-- <th scope="row">TR-7</th> -->
-                <figure style="display: inline-block; width: 19%;">
-                  <img class="center" style="height: auto;" src="static/imgs/bashar_pic.jpg">
-                  <figcaption class="is-size-6-mobile"><a href="https://www.basharalhafni.com/" style="border-radius: 20%" target="_blank">Bashar Alhafni</a><sup>1</sup></figcaption>
-                </figure>
-                <figure style="display: inline-block; width: 19%;">
-                  <img class="center"style="height: auto;" src="static/imgs/sowmya_pic.jpeg">
-                  <figcaption class="is-size-6-mobile"><a href="https://nrc.canada.ca/en/corporate/contact-us/nrc-directory-science-professionals/sowmya-vajjala" style="border-radius: 50%"  target="_blank">Sowmya Vajjala</a><sup>2</sup></figcaption>
-                </figure>
-                <figure style="display: inline-block; width: 19%;">
-                  <img class="center" style="height: auto;" src="static/imgs/stefano_pic.jpg">
-                  <figcaption class="is-size-6-mobile"><a href="https://www.eng.cam.ac.uk/profiles/sb2549" style="border-radius: 50%"  target="_blank">Stefano Banno</a><sup>3</sup></figcaption>
-                </figure>
-                <figure style="display: inline-block; width: 19%;">
-                  <img class="center" style="height: auto; "src="static/imgs/kaushal_pic.jpg">
-                  <figcaption class="is-size-6-mobile"><a href="https://kaushal0494.github.io/" style="border-radius: 50%"  target="_blank">Kaushal Kumar Maurya</a><sup>4</sup></figcaption>
-                </figure>
-                <figure style="display: inline-block; width: 19%;">
-                  <img  class="center" style="height: auto;" src="static/imgs/katya_pic.jpeg">
-                  <figcaption class="is-size-6-mobile"><a href="https://ekochmar.github.io/about/"  style="border-radius: 50%"  target="_blank">Ekaterina Kochmar</a><sup>4</sup></figcaption>
-                </figure>
-
-              </tr>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <div style="display: flex; justify-content: space-between; padding: 5px">
+                  <figure style="display: inline-block; width: 19%;">
+                    <img class="center" style="height: auto;" src="static/imgs/haonan_pic.jpg">
+                    <figcaption class="is-size-6-mobile"><a href="#" style="border-radius: 20%" target="_blank">Haonan
+                        Li</a><sup>1,2</sup></figcaption>
+                  </figure>
+                  <figure style="display: inline-block; width: 19%;">
+                    <img class="center" style="height: auto;" src="static/imgs/xudong_pic.jpg">
+                    <figcaption class="is-size-6-mobile"><a href="#" style="border-radius: 50%" target="_blank">Xudong
+                        Han</a><sup>1,2</sup></figcaption>
+                  </figure>
+                  <figure style="display: inline-block; width: 19%;">
+                    <img class="center" style="height: auto;" src="static/imgs/emad_pic.jpg">
+                    <figcaption class="is-size-6-mobile"><a href="#" style="border-radius: 50%" target="_blank">Emad
+                        Alghamdi</a><sup>1,3</sup></figcaption>
+                  </figure>
+                  <figure style="display: inline-block; width: 19%;">
+                    <img class="center" style="height: auto;" src="static/imgs/lizhi_pic.jpg">
+                    <figcaption class="is-size-6-mobile"><a href="#" style="border-radius: 50%" target="_blank">Lizhi
+                        Lin</a><sup>4</sup></figcaption>
+                  </figure>
+                  <figure style="display: inline-block; width: 19%;">
+                    <img class="center" style="height: auto;" src="static/imgs/monojit_pic.jpg">
+                    <figcaption class="is-size-6-mobile"><a href="#" style="border-radius: 50%" target="_blank">Monojit
+                        Choudhury</a><sup>1</sup></figcaption>
+                  </figure>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 5px">
+                  <figure style="display: inline-block; width: 33%;">
+                    <img class="center" style="height: auto;" src="static/imgs/jingfeng_pic.jpg">
+                    <figcaption class="is-size-6-mobile"><a href="#" style="border-radius: 50%" target="_blank">Jingfeng
+                        Zhang</a><sup>5</sup></figcaption>
+                  </figure>
+                  <figure style="display: inline-block; width: 33%;">
+                    <img class="center" style="height: auto;" src="static/imgs/paul_pic.jpg">
+                    <figcaption class="is-size-6-mobile"><a href="#" style="border-radius: 50%" target="_blank">Paul
+                        Röttger</a><sup>6</sup></figcaption>
+                  </figure>
+                  <figure style="display: inline-block; width: 33%;">
+                    <img class="center" style="height: auto;" src="static/imgs/timothy_pic.jpg">
+                    <figcaption class="is-size-6-mobile"><a href="#" style="border-radius: 50%" target="_blank">Timothy
+                        Baldwin</a><sup>1,2,7</sup></figcaption>
+                  </figure>
+                </div>
+              </span>
             </div>
-            </span>
+
+            <div class="is-size-6 publication-authors">
+              <span class="author-block"><sup>1</sup>MBZUAI</span>
+              <span class="author-block"><sup>2</sup>LibrAI</span>
+              <span class="author-block"><sup>3</sup>King Abdulaziz University</span>
+              <span class="author-block"><sup>4</sup>Tsinghua University</span>
+              <span class="author-block"><sup>5</sup>University of Auckland</span>
+              <span class="author-block"><sup>6</sup>Bocconi University</span>
+              <span class="author-block"><sup>7</sup>The University of Melbourne</span>
+            </div>
+
           </div>
-
-          <div class="is-size-6 publication-authors">
-            <span class="author-block"><sup>1</sup>New York University,</span>
-            <span class="author-block"><sup>2</sup>NRC-CNRC,</span>
-            <span class="author-block"><sup>3</sup>University of Cambridge,</span>
-            <span class="author-block"><sup>4</sup>MBZUAI</span>
-          </div>
+        </div>
 
 
-          <!-- <br /> -->
+        <!-- <br /> -->
 
-<!--           <div class="is-size-5 publication-authors">
+        <!--           <div class="is-size-5 publication-authors">
             <b>Sunday July 9 14:00 - 17:30 (EDT) @ Metropolitan West</b>
           </div> -->
 
-<!--           <div class="is-size-5 publication-authors">
+        <!--           <div class="is-size-5 publication-authors">
             Visit <a target="_blank" href="https://us06web.zoom.us/rec/play/6fqU9YDLoFtWqpk8w8I7oFrszHKW6JkbPVGgHsdPBxa69ecgCxbmfP33asLU3DJ74q5BXqDGR2ycOTFk.93teqylfi_uiViNK?canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fus06web.zoom.us%2Frec%2Fshare%2FNrYheXPtE5zOlbogmdBg653RIu7RBO1uAsYH2CZt_hacD1jOHksRahGlERHc_Ybs.KGX1cRVtJBQtJf0o">this link</a>
             for the Zoom recording of the tutorial
           </div> -->
 
-<!--           <div class="is-size-5 publication-authors">
+        <!--           <div class="is-size-5 publication-authors">
             QnA: <a href="https://tinyurl.com/retrieval-lm-tutorial" target="_blank"><b>tinyurl.com/retrieval-lm-tutorial</b></a>
           </div> -->
 
 
-        </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">About this tutorial</h2>
-        <div class="content has-text-justified">
-          <p>
-            The role of large language models (LLMs) in education is an increasing area of interest today, considering the new opportunities they offer for teaching, learning, and assessment. This cutting-edge tutorial provides an overview of the educational applications of NLP and the impact that the recent advances in LLMs have had on this field. We will discuss the key challenges and opportunities presented by LLMs, grounding them in the context of four major educational applications: reading, writing, and speaking skills, and intelligent tutoring systems (ITS). This tutorial is designed for researchers and practitioners interested in the educational applications of NLP and the role LLMs have to play in this area. It is the first of its kind to address this timely topic.
-          </p>
+    </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">About this tutorial</h2>
+          <div class="content has-text-justified">
+            <p>
+              This tutorial will provide an in-depth exploration of safety issues for generative AI models, covering a
+              broad range of sub-topics, including a risk taxonomy, adversarial attack types, safety evaluation, defense
+              mechanisms, red teaming for multi-modal models, and agentic AI. The goal is to brief attendees on the
+              latest advancements and emerging trends in the field, enabling them to identify and mitigate
+              vulnerabilities in generative AI systems. Participants will gain insights into recent research
+              developments, open research questions, and novel research directions. This cutting-edge tutorial is
+              designed for AI researchers, developers, and security professionals with a basic knowledge of red teaming
+              and AI safety.
+            </p>
+          </div>
         </div>
       </div>
+
     </div>
-
-  </div>
-</section>
+  </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
+  <section class="section">
+    <div class="container is-max-desktop">
 
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Schedule</h2>
-<!--         <p>
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Schedule</h2>
+          <!--         <p>
           Our tutorial will be held on July 9 (all the times are based on EDT = Toronto local time).
           <em>Slides may be subject to updates.</em>
         </p> -->
 
-        <div class="content has-text-justified">
+          <div class="content has-text-justified">
 
-          <style type="text/css">
-          .tg  {border-collapse:collapse;border-spacing:0;}
-          .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-            overflow:hidden;padding:10px 5px;word-break:normal;}
-          .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-          .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-          .tg .tg-0lax{text-align:left;vertical-align:top}
-          </style>
-          <table class="tg">
-          <thead>
-            <tr>
-              <th class="tg-0pky">Time</th>
-              <th class="tg-0lax">Section</th>
-              <th class="tg-0lax">Presenter</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="tg-0lax">9:00—9:15</td>
-              <td class="tg-0lax">Section 1: Introduction  <a href="./slides/" target='_blank'>[Slides]</a></td>
-              <td class="tg-0lax">Ekaterina</td>
-            </tr>
-            <tr>
-              <td class="tg-0lax">9:15—10:00</td>
-              <td class="tg-0lax">Section 2: LLMs for Writing Assistance  <a href="./slides/" target='_blank'>[Slides]</a></td>
-              <td class="tg-0lax">Bashar</td>
-            </tr>
-            <tr>
-              <td class="tg-0lax">10:00-10:45</td>
-              <td class="tg-0lax">Section 3: LLMs for Reading Assistance   <a href="./slides/" target='_blank'>[Slides]</a></td>
-              <td class="tg-0lax">Sowmya</td>
-            </tr>
-            <tr>
-              <td class="tg-0lax">10:45—11:15</td>
-              <td class="tg-0lax">Coffee break</td>
-              <td class="tg-0lax"></td>
-            </tr>
+            <style type="text/css">
+              .tg {
+                border-collapse: collapse;
+                border-spacing: 0;
+              }
 
-            <tr>
-              <td class="tg-0lax">11:15—12:00</td>
-              <td class="tg-0lax">Section 4: LLMs for Spoken Language Learning and
-Assessment <a href="./slides/" target='_blank'>[Slides]</a></td>
-              <td class="tg-0lax">Stefano</td>
-            </tr>
-            <tr>
-              <td class="tg-0lax">12:00—12:45</td>
-              <td class="tg-0lax">Section 5: LLMs in Intelligent Tutoring Systems (ITS) <a href="./slides/" target='_blank'>[Slides]</a></td>
-              <td class="tg-0lax">Kaushal & Ekaterina</td>
-            </tr>
-            <tr>
-              <td class="tg-0lax">12:45—1:00</td>
-              <td class="tg-0lax">Q & A</td>
-              <td class="tg-0lax"></td>
-            </tr>
-          </tbody>
-          </table>
+              .tg td {
+                border-color: black;
+                border-style: solid;
+                border-width: 1px;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                overflow: hidden;
+                padding: 10px 5px;
+                word-break: normal;
+              }
+
+              .tg th {
+                border-color: black;
+                border-style: solid;
+                border-width: 1px;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                font-weight: normal;
+                overflow: hidden;
+                padding: 10px 5px;
+                word-break: normal;
+              }
+
+              .tg .tg-0pky {
+                border-color: inherit;
+                text-align: left;
+                vertical-align: top
+              }
+
+              .tg .tg-0lax {
+                text-align: left;
+                vertical-align: top
+              }
+            </style>
+            <table class="tg">
+              <thead>
+                <tr>
+                  <th class="tg-0pky">Time</th>
+                  <th class="tg-0lax">Section</th>
+                  <th class="tg-0lax">Topics</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tg-0lax">9:00—9:15</td>
+                  <td class="tg-0lax">Introduction</td>
+                  <td class="tg-0lax">
+                    • Definitions and concepts of jailbreaking, red teaming, adversarial attacks<br />
+                    • Importance of red teaming for generative AI
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">9:15—9:45</td>
+                  <td class="tg-0lax">Risk Taxonomization</td>
+                  <td class="tg-0lax">
+                    • Ethical and social risks<br />
+                    • Harm types and targets<br />
+                    • Domain-specific risks<br />
+                    • Policy-oriented risks; case study of Meta, OpenAI, and Google policies
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">9:45—10:15</td>
+                  <td class="tg-0lax">Attack</td>
+                  <td class="tg-0lax">
+                    • Problem Statement<br />
+                    • Attack as a search problem<br />
+                    • Search Goal<br />
+                    • Search Strategy
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">10:15—10:55</td>
+                  <td class="tg-0lax">Attack Methods</td>
+                  <td class="tg-0lax">
+                    • Completion compliance<br />
+                    • Instruction indirection<br />
+                    • Generalization glide<br />
+                    • Model manipulation
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">10:55—11:25</td>
+                  <td class="tg-0lax">Evaluation Benchmarks</td>
+                  <td class="tg-0lax">
+                    • How to define a successful attack<br />
+                    • Balance between helpfulness and harmlessness<br />
+                    • Common datasets and metrics
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">11:25—11:55</td>
+                  <td class="tg-0lax">Defense Mechanisms</td>
+                  <td class="tg-0lax">
+                    • Training-time defenses<br />
+                    • Inference-time defenses
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">11:55—12:25</td>
+                  <td class="tg-0lax">Multi-modal and agentic AI red teaming</td>
+                  <td class="tg-0lax">
+                    • Recent work<br />
+                    • Multi-modal model vulnerabilities<br />
+                    • Red teaming strategies for agentic AI
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Reading List</h2>
+      <!-- Concurrent Work. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Target Audience</h2>
+          <div class="content has-text-justified">
+            <p>
+              This tutorial is designed for AI researchers, developers, and security professionals who have a basic
+              understanding of red teaming and AI safety. Attendees should have prior knowledge of basic AI and machine
+              learning concepts, including familiarity with model training and evaluation. Knowledge of specific
+              modeling approaches such as natural language processing and computer vision will be advantageous.
+            </p>
+          </div>
 
-        <p>We've compiled a comprehensive reading list for each topic covered in this tutorial. Each topic has a dedicated reading list page along with the list of papers we'll discuss during the tutorial.
-          We welcome additions and suggestions from community for each topic. If you think that we're missing essential papers, please submit a <a href="https://github.com/coling2025-edu-llms/coling2025-edu-llms.github.io" target="_blank"> pull request.</a></p>
-        <br /> 
-        <h3 class="title is-5"><a href="./reading_lists/writing_assistants.html" target="_blank">Section 2: LLMs for Writing Assistance</a></h3>
-                <ul>
-                  <li> <a href="https://direct.mit.edu/coli/article/49/3/643/115846/Grammatical-Error-Correction-A-Survey-of-the-State">Grammatical Error Correction: A Survey of the State of the Art</a> (Bryant et al., 2023).</li>
-                  <li> <a href="https://aclanthology.org/2023.bea-1.18">Exploring Effectiveness of GPT-3 in Grammatical Error Correction: A Study on Performance and Controllability in Prompt-Based Methods</a> (Loem et al., 2023)</li>
-                  <li> <a href="https://arxiv.org/abs/2303.14342">Analyzing the Performance of GPT-3.5 and GPT-4
-                    in Grammatical Error Correction</a> (Coyne et al., 2023)</li>
-                  <li><a href="https://aclanthology.org/2024.lrec-main.692">GPT-3.5 for Grammatical Error Correction</a> (Katinskaia et al., 2024)</li>
-                  <li> <a href="https://aclanthology.org/2024.findings-acl.711"> Prompting open-source and commercial language models for grammatical error correction of English learner text</a> (Davis et al., 2024)</li>
-                  <li> <a href="https://aclanthology.org/2024.bea-1.3">Pillars of Grammatical Error Correction: Comprehensive Inspection Of
-                    Contemporary Approaches In The Era of Large Language Models</a> (Omelianchuk et al., 2024) </li>
-                  <li> <a href="https://aclanthology.org/2024.lrec-main.350/">Controlled Generation with Prompt Insertion for Natural Language
-                    Explanations in Grammatical Error Correction</a> (Kaneko et al., 2024)</li>
-                  <li> <a href="https://aclanthology.org/2024.bea-1.6">Large Language Models Are State-of-the-Art Evaluator for Grammatical Error Correction</a> (Kobayashi et al., 2024)</li>
-                  <li> <a href="https://aclanthology.org/2023.findings-emnlp.689">Unraveling Downstream Gender Bias from Large Language Models: A
-                    Study on AI Educational Writing Assistance</a> (Wambsganss et al., 2023)</li>
-                </ul>
-            <br />
-
-  
-        <h3 class="title is-5"><a href="./reading_lists/reading_assistants.html" target="_blank">Section 3: LLMs for Reading Assistance</a></h3>
-
-           <ul style='margin-top:0cm' start=1 type=1>
- <li> <a href="https://aclanthology.org/2023.emnlp-main.821/">BLESS: Benchmarking Large Language Models on
-     Sentence Simplification</a> (Kew et.al., 2023)</li>
- <li><a href="https://link.springer.com/article/10.1007/s40593-023-00374-x">Review on Neural Question Generation for
-     Education Purposes</a> (Al Farabi et.al., 2023)</li>
-   <li><a href="http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.574.pdf">Trends,
-     limitations and open challenges in automatic readability assessment
-     research</a> (Vajjala, 2022)</li>
- <li><a href="https://aclanthology.org/2021.findings-acl.233.pdf">Automatic text
-     simplification for social good: Progress and challenges</a> (Stajner, 2021)</li>
- <li><a href="https://aclanthology.org/Q15-1021/">Problems
-     in Current Text Simplification Research: New Data Can Help</a> (Xu et.al., 2015)</li>
-</ul><br />
-
-        <h3 class="title is-5"><a href="./reading_lists/spoken_language_assessment.html" target="_blank">Section 4: LLMs for Spoken Language Learning and Assessment</a></h3>
-        <ul style='margin-top:0cm' start=1 type=1>
-            <li> <a href="https://openreview.net/forum?id=14rn7HpKVk">SALMONN: Towards generic hearing abilities for large language models</a> (Tang et al., 2024)</li> 
-            <li> <a href="https://aclanthology.org/2024.bea-1.14/">Can GPT-4 do L2 analytic assessment?</a> (Bannò et al., 2024)</li>         
-            <li><a href="https://www.isca-archive.org/interspeech_2022/kim22k_interspeech.html">Automatic Pronunciation Assessment 
-              using Self-Supervised Speech Representation Learning</a> (Kim et al., 2022)</li>       
-            <li> <a href="https://www.isca-archive.org/interspeech_2021/peng21e_interspeech.html">A Study on Fine-Tuning wav2vec2.0 Model for the Task of 
-              Mispronunciation Detection and Diagnosis.</a> (Peng et al., 2021)</li>
-            <li> <a href="https://aclanthology.org/P17-2008.pdf">Incorporating uncertainty into deep learning for spoken language assessment</a> (Malinin et al., 2017)</li>
-            <li><a href="https://books.google.ae/books?hl=en&lr=&id=88bADwAAQBAJ&oi=fnd&pg=PP1&dq=Automated+speaking+assessment:+Using+language+technologies+to+score+spontaneous+speech.&ots=jHm201a2oi&sig=VdGxpR5bTetVnXk_xc6p6VAcgSU&redir_esc=y#v=onepage&q=Automated%20speaking%20assessment%3A%20Using%20language%20technologies%20to%20score%20spontaneous%20speech.&f=false">Automated speaking assessment: 
-              Using language technologies to score spontaneous speech.</a> (Zechner and Evanini, 2019)</li>
-            <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0346251X00000336?via%3Dihub">The ‘communicative’ legacy in 
-              language testing</a> (Fulcher, 2000)</li>
-          </ul>
-        <br />
-
-        <h3 class="title is-5"><a href="./reading_lists/education_and_its.html" target="_blank">Section 5: LLMs in Intelligent Tutoring Systems (ITS)</a></h3>
-        <ul style='margin-top:0cm' start=1 type=1>
-            <li> <a href="https://arxiv.org/pdf/2305.14536">MATHDIAL: A Dialogue Tutoring Dataset with Rich Pedagogical 
-             Properties Grounded in Math Reasoning Problems</a> (Macina et al., 2023)</li> 
-            <li> <a href="https://arxiv.org/pdf/2306.03090">Is ChatGPT a Good Teacher Coach? Measuring Zero-Shot Performance For Scoring and
-             Providing Actionable Insights on Classroom Instruction</a> (Wang and Demszky, 2023)</li> 
-            <li> <a href="https://arxiv.org/pdf/2205.07540">The AI Teacher Test: Measuring the Pedagogical Ability of 
-             Blender and GPT-3 in Educational Dialogues</a> (Tack and Piech, 2022)</li>         
-            <li><a href="https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2021.654924/full">Are We There Yet? - 
-             A Systematic Literature Review on Chatbots in Education</a> (Wollny et al., 2021)</li>       
-            <li> <a href="https://link.springer.com/content/pdf/10.1186/s41235-017-0087-y.pdf"> Teaching the science of learning</a> (Weinstein et al., 2018)</li>
-            <li> <a href="https://link.springer.com/article/10.1007/s40593-014-0029-5">AutoTutor and Family: A Review of 17 Years of Natural Language Tutoring</a> (Nye et al., 2014)</li>
-            <li><a href="https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/download/1591/1490">Intelligent 
-             tutoring systems with conversational dialogue</a> (Graesser et al., 2001)</li>
-            <li><a href="https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=ce9ccc58eb7db2c1ebc474ecba5772176afa71d3">The 2 sigma problem: 
-            The search for methods of group instruction as effective as one-to-one tutoring</a> (Bloom, 1984)</li>
-          </ul>
-        <br />
-
-
-
-        <h3 class="title is-5"><a href="./reading_lists/challenges.html" target="_blank">Section 6: Challenges & Opportunities</a></h3>
-        We will finish the tutorial by discussing open challenges and opportunities as well as most promising future directions. 
-        We solicit suggestions from the wider community on the material to cover in this section.
-        If you would like to suggest papers that we should cover, please submit a <a href="https://github.com/coling2025-edu-llms/coling2025-edu-llms.github.io" target="_blank"> pull request.
-<!--         TODO
-        <ul>
-          <li></li>
-          <li></li>
-        </ul>
-        -->
-
+          <h2 class="title is-3">Reading List</h2>
+          <div class="content">
+            <ul>
+              <li>
+                <a href="#">Ethical and social risks of harm from language models</a> (Weidinger et al., 2021)
+              </li>
+              <li>
+                <a href="#">A general language assistant as a laboratory for alignment</a> (Askell et al., 2021)
+              </li>
+              <li>
+                <a href="#">Do-Not-Answer: A Dataset for Evaluating Safeguards in LLMs</a> (Wang et al., 2023)
+              </li>
+              <li>
+                <a href="#">"Do Anything Now": Characterizing and Evaluating In-The-Wild Jailbreak Prompts on Large
+                  Language Models</a> (Shen et al., 2023)
+              </li>
+              <li>
+                <a href="#">Universal and Transferable Adversarial Attacks on Aligned Language Models</a> (Andy et al.,
+                2023)
+              </li>
+              <li>
+                <a href="#">Llama Guard: LLM-based Input-Output Safeguard for Human-AI Conversations</a> (Inan et al.,
+                2023)
+              </li>
+              <li>
+                <a href="#">Against The Achilles' Heel: A Survey on Red Teaming for Generative Models</a> (Lin et al.,
+                2024)
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-</section>
+  </section>
 
 
-<!-- <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>
@@ -296,29 +337,30 @@ Assessment <a href="./slides/" target='_blank'>[Slides]</a></td>
 </section> -->
 
 
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link" href="https://github.com/ACL2023-Retrieval-LM" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            Website <a href="https://github.com/nerfies/nerfies.github.io">source code.</a>
-          </p>
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="https://github.com/ACL2023-Retrieval-LM" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              Website <a href="https://github.com/nerfies/nerfies.github.io">source code.</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
