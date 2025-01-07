@@ -295,47 +295,102 @@
       <!-- Concurrent Work. -->
       <div class="columns is-centered">
         <div class="column is-full-width">
-          <h2 class="title is-3">Target Audience</h2>
-          <div class="content has-text-justified">
-            <p>
-              This tutorial is designed for AI researchers, developers, and security professionals who have a basic
-              understanding of red teaming and AI safety. Attendees should have prior knowledge of basic AI and machine
-              learning concepts, including familiarity with model training and evaluation. Knowledge of specific
-              modeling approaches such as natural language processing and computer vision will be advantageous.
-            </p>
-          </div>
-
           <h2 class="title is-3">Reading List</h2>
-          <div class="content">
-            <ul>
-              <li>
-                <a href="#">Against The Achilles' Heel: A Survey on Red Teaming for Generative Models</a> (Lin et al.,
-                2024)
-              </li>
-              <li>
-                <a href="#">Ethical and social risks of harm from language models</a> (Weidinger et al., 2021)
-              </li>
-              <li>
-                <a href="#">A general language assistant as a laboratory for alignment</a> (Askell et al., 2021)
-              </li>
-              <li>
-                <a href="#">Do-Not-Answer: A Dataset for Evaluating Safeguards in LLMs</a> (Wang et al., 2023)
-              </li>
-              <li>
-                <a href="#">"Do Anything Now": Characterizing and Evaluating In-The-Wild Jailbreak Prompts on Large
-                  Language Models</a> (Shen et al., 2023)
-              </li>
-              <li>
-                <a href="#">Universal and Transferable Adversarial Attacks on Aligned Language Models</a> (Andy et al.,
-                2023)
-              </li>
-              <li>
-                <a href="#">Llama Guard: LLM-based Input-Output Safeguard for Human-AI Conversations</a> (Inan et al.,
-                2023)
-              </li>
 
-            </ul>
-          </div>
+          <p>We've compiled a comprehensive reading list for each topic covered in this tutorial. Each topic has a
+            dedicated reading list page along with the list of papers we'll discuss during the tutorial.
+            We welcome additions and suggestions from community for each topic. If you think that we're missing
+            essential papers, please submit a <a
+              href="https://github.com/coling2025-edu-llms/coling2025-edu-llms.github.io" target="_blank"> pull
+              request.</a></p>
+          <br />
+
+          <h3 class="title is-5"><a href="./reading_lists/surveys_and_taxonomies.html" target="_blank">Surveys and
+              Taxonomies</a></h3>
+          <ul>
+            <li><a href="#">Against The Achilles' Heel: A Survey on Red Teaming for Generative Models</a> (Lin et al.,
+              2024)</li>
+            <li><a href="https://www.mdpi.com/2079-9292/13/5/842">Robust Testing of AI Language Model Resiliency with
+                Novel Adversarial Prompts</a></li>
+            <li><a href="https://arxiv.org/abs/2403.16432">Don't Listen To Me: Understanding and Exploring Jailbreak
+                Prompts of Large Language Models</a></li>
+            <li><a href="https://arxiv.org/abs/2403.04786">Breaking Down the Defenses: A Comparative Survey of Attacks
+                on Large Language Models</a></li>
+            <li><a href="https://arxiv.org/abs/2403.13309">Mapping LLM Security Landscapes: A Comprehensive Stakeholder
+                Risk Assessment Proposal</a></li>
+            <li><a href="https://arxiv.org/abs/2403.12503">Securing Large Language Models: Threats,Vulnerabilities and
+                Responsible Practices</a></li>
+            <li><a href="https://arxiv.org/abs/2310.10383">Privacy in Large Language Models: Attacks,Defenses and Future
+                Directions</a></li>
+          </ul>
+          <br />
+
+          <h3 class="title is-5"><a href="./reading_lists/attacks.html" target="_blank">Attacks</a></h3>
+          <ul>
+            <li><a href="https://arxiv.org/abs/2308.09662">Red-Teaming Large Language Models using Chain of Utterances
+                for Safety-Alignment</a></li>
+            <li><a href="https://arxiv.org/abs/2309.10253">GPTFUZZER: Red Teaming Large Language Models with
+                Auto-Generated Jailbreak Prompts</a></li>
+            <li><a href="https://arxiv.org/abs/2403.04769">Using Hallucinations to Bypass GPT4's Filter</a></li>
+            <li><a href="https://arxiv.org/abs/2402.1569">Foot In The Door: Understanding Large Language Model
+                Jailbreaking via Cognitive Psychology</a></li>
+            <li><a href="https://arxiv.org/abs/2309.06135">Prompting4Debugging: Red-Teaming Text-to-Image Diffusion
+                Models by Finding Problematic Prompts</a></li>
+            <li><a href="https://openreview.net/pdf?id=m6xyTie61H">Eliciting Language Model Behaviors using Reverse
+                Language Models</a></li>
+          </ul>
+          <br />
+
+          <h3 class="title is-5"><a href="./reading_lists/defenses.html" target="_blank">Defenses</a></h3>
+          <ul>
+            <li><a href="https://arxiv.org/abs/2307.04657">BeaverTails: Towards Improved Safety Alignment of LLM via a
+                Human-Preference Dataset</a></li>
+            <li><a href="https://arxiv.org/abs/2402.14968">Mitigating Fine-tuning Jailbreak Attack with Backdoor
+                Enhanced Alignment</a></li>
+            <li><a href="https://arxiv.org/abs/2403.09513">AdaShield: Safeguarding Multimodal Large Language Models from
+                Structure-based Attack via Adaptive Shield Prompting</a></li>
+            <li><a href="https://arxiv.org/abs/2403.13031">RigorLLM: Resilient Guardrails for Large Language Models
+                against Undesired Content</a></li>
+            <li><a href="https://arxiv.org/abs/2402.11755">SPML: A DSL for Defending Language Models Against Prompt
+                Attacks</a></li>
+            <li><a href="https://arxiv.org/abs/2403.1472">Defending Against Indirect Prompt Injection Attacks With
+                Spotlighting</a></li>
+          </ul>
+          <br />
+
+          <h3 class="title is-5"><a href="./reading_lists/evaluations_and_benchmarks.html" target="_blank">Evaluations
+              and Benchmarks</a></h3>
+          <ul>
+            <li><a href="https://arxiv.org/abs/2401.00991">A Novel Evaluation Framework for Assessing Resilience Against
+                Prompt Injection Attacks in Large Language Models</a></li>
+            <li><a href="https://arxiv.org/abs/2401.09002">AttackEval: How to Evaluate the Effectiveness of Jailbreak
+                Attacking on Large Language Models</a></li>
+            <li><a href="https://arxiv.org/abs/2404.01318">JailbreakBench: An Open Robustness Benchmark for Jailbreaking
+                Large Language Models</a></li>
+            <li><a href="https://arxiv.org/abs/2404.05399">SafetyPrompts: a Systematic Review of Open Datasets for
+                Evaluating and Improving Large Language Model Safety</a></li>
+            <li><a href="https://arxiv.org/abs/2307.08487">Latent Jailbreak: A Benchmark for Evaluating Text Safety and
+                Output Robustness of Large Language Models</a></li>
+            <li><a href="https://arxiv.org/abs/2311.01011">Tensor Trust: Interpretable Prompt Injection Attacks from an
+                Online Game</a></li>
+          </ul>
+          <br />
+
+          <h3 class="title is-5"><a href="./reading_lists/multimodal_and_agents.html" target="_blank">Multimodal and
+              Agents</a></h3>
+          <ul>
+            <li><a href="https://arxiv.org/abs/2403.14774">Few-Shot Adversarial Prompt Learning on Vision-Language
+                Models</a></li>
+            <li><a href="https://arxiv.org/abs/2312.07553">Hijacking Context in Large Multi-modal Models</a></li>
+            <li><a href="https://arxiv.org/abs/2306.13213">Visual Adversarial Examples Jailbreak Aligned Large Language
+                Models</a></li>
+            <li><a href="https://arxiv.org/abs/2307.14539">Jailbreak in pieces: Compositional Adversarial Attacks on
+                Multi-Modal Language Models</a></li>
+            <li><a href="https://arxiv.org/abs/2404.01101">UFID: A Unified Framework for Input-level Backdoor Detection
+                on Diffusion Models</a></li>
+            <li><a href="https://arxiv.org/abs/2402.10882">Universal Prompt Optimizer for Safe Text-to-Image
+                Generation</a></li>
+          </ul>
         </div>
       </div>
   </section>
